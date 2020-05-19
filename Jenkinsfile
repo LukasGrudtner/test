@@ -8,6 +8,8 @@ pipeline {
             steps {
                 withSonarQubeEnv('SONAR_LOCAL') {
                     sh "${scannerHome}/bin/sonar-scanner \
+                    -Dsonar.projectKey=test \
+                    -Dsonar.sources=. \
                     -Dsonar.host.url=http://localhost:9000 \
                     -Dsonar.login=f78a0bf2dc4540f8a431051627d1a766055419da \
                     -Dsonar.pullrequest.branch=dev \
