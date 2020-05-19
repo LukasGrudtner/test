@@ -16,7 +16,7 @@ pipeline {
                     -Dsonar.coverage.exclusions=**/database/**,**/dto/**,**/tables/**,**/tests/**,*.txt,*.yml,*.xml,*.env \
                     -Dsonar.pullrequest.branch=${GIT_LOCAL_BRANCH}
                     -Dsonar.pullrequest.key=1 \
-                    sonar.pullrequest.base=master"
+                    -Dsonar.pullrequest.base=master"
                 }
             }
         }
