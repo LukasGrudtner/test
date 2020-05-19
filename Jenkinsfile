@@ -12,7 +12,7 @@ pipeline {
                     -Dsonar.projectKey=test \
                     -Dsonar.sources=. \
                     -Dsonar.host.url=http://localhost:9000 \
-                    -Dsonar.login=f78a0bf2dc4540f8a431051627d1a766055419da \
+                    -Dsonar.login=8eeb8c92b9e2ac589ae7990d9c566b0b9efe5f47 \
                     -Dsonar.coverage.exclusions=**/database/**,**/dto/**,**/tables/**,**/tests/**,*.txt,*.yml,*.xml,*.env"
                 }
             }
